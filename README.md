@@ -143,9 +143,9 @@ window.meetbox.joinMeeting(meetingId);
 
 ## Milestones
 
-1. Codebase refactoring, stabilisation and intensive testing (approx. end of June 2021).
-2. Custom implementation of signalling as an alternative for PubNub (approx. end of May 2021).
-3. Integration with [coturn](https://github.com/coturn/coturn) as an alternative for XirSys (approx. end of July 2021).
+1. Codebase refactoring, stabilisation and intensive testing (approx. end of August 2023).
+2. Custom implementation of signalling as an alternative for PubNub (approx. end of September 2023).
+3. Integration with [coturn](https://github.com/coturn/coturn) as an alternative for XirSys (approx. end of September 2023).
 4. Any requirements from community and users...
 
 ## License
