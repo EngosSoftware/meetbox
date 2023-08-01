@@ -33,6 +33,7 @@ import {ice} from "./ice.js"
  */
 export function init(containerId, configuration) {
   logger.init(configuration.trace);
+  logger.info(`Initializing meetbox...`)
   ice.init(configuration);
   pipe.init(configuration);
   const externalContainer = window.document.getElementById(containerId);

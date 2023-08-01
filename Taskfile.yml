@@ -1,0 +1,12 @@
+version: '3'
+
+silent: true
+
+tasks:
+
+  reb:
+    desc: Rebuilds the library and copies to temporary destination
+    cmds:
+      - cmd: npm run build
+      - cmd: cp ./dist/meetbox.min.js ../whispery.fe/assets
+      - cmd: cp ./dist/meetbox.min.js.LICENSE.txt ../whispery.fe/assets
