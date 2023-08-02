@@ -201,8 +201,19 @@ Pipe.prototype.createConnection = function (messageType) {
   logger.info('creating new connection...');
   const me = this;
   ice.getServers().then((data) => {
+    // const iceServers = {
+    //   iceServers: [data]
+    // }
     const iceServers = {
-      iceServers: [data]
+      iceServers: [{
+        credential: "test123",
+        urls: [
+          "stun:stun.whispery.de",
+          "turn:turn.whispery.de:3478?transport=tcp",
+          "turn:turn.whispery.de:3478?transport=udp",
+        ],
+        username: "test"
+      }]
     }
     logger.info('ICE servers:', iceServers);
     this.peerConnection = new RTCPeerConnection(iceServers);
